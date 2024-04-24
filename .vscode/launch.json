@@ -1,0 +1,32 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch (lldb-mi)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/${workspaceFolderBasename}.exe",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "miDebuggerPath": "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/bin/lldb-mi.exe",
+            "setupCommands": [
+                {
+                    "description": "為 gdb 啟用整齊打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "將反組譯風格設置為 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+        }
+    ]
+}

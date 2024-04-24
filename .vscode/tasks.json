@@ -1,0 +1,67 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CompilemMain",
+            "type": "shell",
+            "command": "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/bin/clang++.exe",
+            "args": [ 
+                "*.cpp",
+                "-o", "${workspaceFolderBasename}.exe", "-g", "-Wall", "-lws2_32", "-std=c++14",
+
+                "-IC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]freetype-2.10.0/include/freetype2",
+                "-LC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]freetype-2.10.0/lib",
+                "-lfreetype",
+
+                "-IC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]spdlog-1.12.0/include",
+                "-LC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]spdlog-1.12.0/lib",
+                "-lspdlog",
+
+                "-IC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]cpu_features-0.9.0/include/cpu_features",
+                "-LC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]cpu_features-0.9.0/lib",
+                "-lcpu_features",
+
+                "-IC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]OpenCV-4.8.1/include",
+                "-LC:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]OpenCV-4.8.1/x64/mingw/lib",
+                "-llibopencv_aruco481", "-llibopencv_bgsegm481", "-llibopencv_bioinspired481", 
+                "-llibopencv_calib3d481", "-llibopencv_ccalib481", "-llibopencv_core481", 
+                "-llibopencv_datasets481","-llibopencv_dpm481", "-llibopencv_face481", 
+                "-llibopencv_features2d481", "-llibopencv_flann481", "-llibopencv_freetype481",
+                "-llibopencv_fuzzy481", "-llibopencv_gapi481", "-llibopencv_hfs481",
+                "-llibopencv_highgui481", "-llibopencv_img_hash481", "-llibopencv_imgcodecs481",
+                "-llibopencv_imgproc481", "-llibopencv_intensity_transform481", "-llibopencv_line_descriptor481", 
+                "-llibopencv_ml481", "-llibopencv_objdetect481","-llibopencv_optflow481",
+                "-llibopencv_phase_unwrapping481", "-llibopencv_photo481", 
+                "-llibopencv_plot481", "-llibopencv_quality481", "-llibopencv_rapid481",
+                "-llibopencv_reg481","-llibopencv_saliency481", "-llibopencv_shape481", "-llibopencv_stereo481", 
+                "-llibopencv_stitching481", "-llibopencv_structured_light481", 
+                "-llibopencv_superres481", "-llibopencv_surface_matching481", 
+                "-llibopencv_tracking481", "-llibopencv_video481","-llibopencv_videoio481", 
+                "-llibopencv_videostab481","-llibopencv_xfeatures2d481", 
+                "-llibopencv_ximgproc481", "-llibopencv_xobjdetect481", "-llibopencv_xphoto481",
+                
+                "-lwtsapi32", "-luser32","-mwindows", "-mconsole", "-lwinmm", "-lshlwapi", "-g", "-Wall", "-lws2_32", "-std=c++14",
+
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "dependsOn": "CompilemMain",
+            "command": "cmd.exe /c start ${workspaceRoot}/${workspaceFolderBasename}.exe",
+            "presentation": {
+                "focus": true,
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+        },
+    ]
+}

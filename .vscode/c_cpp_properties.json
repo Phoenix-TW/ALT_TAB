@@ -1,0 +1,54 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/lib/clang/17/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/include/c++/v1",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/python/include",
+
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]OpenCV-4.8.1/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]OpenCC-1.1.6/include/opencc",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]SQLite-3.39.4/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]freetype-2.10.0/include/freetype2",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]glfw-3.3.8/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]spdlog-1.12.0/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]cpu_features-0.9.0/include/cpu_features"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/bin/clang++.exe",
+            "intelliSenseMode": "windows-clang-x64",
+            "compilerArgs": [
+                "-glldb",
+                "-lc++",
+                "-lunwind"
+            ],
+            "browse": {
+                "path": [
+                "${workspaceRoot}",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/lib/clang/17/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/include/c++/v1",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/python/include",
+
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]OpenCV-4.8.1/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]OpenCC-1.1.6/include/opencc",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]SQLite-3.39.4/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]freetype-2.10.0/include/freetype2",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]glfw-3.3.8/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]spdlog-1.12.0/include",
+                "C:/Users/h310m-stx/Documents/Program/C++/llvm-mingw-20231017-ucrt-x86_64/3rdPartyLibrary/[x64]cpu_features-0.9.0/include/cpu_features"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
